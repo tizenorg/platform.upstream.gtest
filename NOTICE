@@ -1,0 +1,2 @@
+2011-10-15 Sanghyun Lee <sanghyunnim.lee@samsung.com>
+ * gtest.cc, gtest.h: Modified that tests work in a child process
