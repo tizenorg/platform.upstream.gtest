@@ -1,23 +1,21 @@
-Name:       gtest
-Summary:    gtest library
+Name:   	gtest
+Summary:    Google Test Framework
 Version:    1.2.1.0
 Release:    2
-License:    TO_BE/FILLED_IN
-Vendor:     TO_BE/FILLED_IN
-Group:      TO_BE/FILLED_IN
+License:    BSD-3-Clause
+Group:      Development/Testing
 Source0:    %{name}-%{version}.tar.gz
-Source1001: 	gtest.manifest
-BuildRoot:  %{_tmppath}/%{name}-%{version}-build
+Source1001: gtest.manifest
 BuildRequires: pkgconfig(python)
 #BuildRequires: automake autoconf libtool
 Provides:   libgtest_main.so.0 libgtest.so.0
 
 %description
-gtest library.
+Libraries for Google's Test Framework for writing C++ Tests
 
 %package devel
-Summary:    gtest (Development)
-Group:      TO_BE/FILLED_IN
+Summary:    Devel package
+Group:      Development/Testing
 Requires:   %{name} = %{version}-%{release}
 
 %description devel

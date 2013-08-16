@@ -1,0 +1,9 @@
+* Fri Aug 16 19:51:36 UTC 2013 - tracy.graydon@intel.com
+- Fix rpmlint error on license
+- Fix rpmlint error on uncapitalized summary
+- Fix rpmlint error on non-standard-group
+- Fix rpmlint error on name-repeated-in-summary
+- Fix rpmlint error on license-placeholder-not-allowed
+- Fix rpmlint error on group-placeholder-not-allowed
+- Fix rpmlint error on description-shorter-than-summary 
+- Add gtest.changes file
