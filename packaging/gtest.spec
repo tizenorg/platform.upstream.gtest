@@ -30,6 +30,8 @@ make
 
 %install
 make DESTDIR=$RPM_BUILD_ROOT install
+mkdir -p %{buildroot}/usr/share/license
+cp %{_builddir}/%{name}-%{version}/COPYING  %{buildroot}/usr/share/license/%{name}
 
 %clean  
 [ ${RPM_BUILD_ROOT} != "/" ] && rm -rf ${RPM_BUILD_ROOT}
@@ -45,6 +47,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %defattr(-,root,root)
 /usr/lib/libgtest_main.so.*
 /usr/lib/libgtest.so.*
+/usr/share/license/%{name}
 
 %files devel
 %manifest %{name}.manifest
