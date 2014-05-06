@@ -25,7 +25,7 @@ This is the development package containing the gtest library
 cp %{SOURCE1001} .
 
 %build
-./configure --prefix=/usr
+%reconfigure --prefix=/usr
 make
 
 %install
