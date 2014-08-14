@@ -45,20 +45,20 @@ cp %{_builddir}/%{name}-%{version}/COPYING  %{buildroot}/usr/share/license/%{nam
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root)
-/usr/lib/libgtest_main.so.*
-/usr/lib/libgtest.so.*
+%{_libdir}/libgtest_main.so.*
+%{_libdir}/libgtest.so.*
 /usr/share/license/%{name}
 
 %files devel
 %manifest %{name}.manifest
 /usr/include/gtest/*.h
 /usr/include/gtest/internal/*.h
-/usr/lib/libgtest_main.so
-/usr/lib/libgtest.so
-/usr/lib/libgtest_main.la
-/usr/lib/libgtest_main.a
-/usr/lib/libgtest.la
-/usr/lib/libgtest.a
+%{_libdir}/libgtest_main.so
+%{_libdir}/libgtest.so
+%{_libdir}/libgtest_main.la
+%{_libdir}/libgtest_main.a
+%{_libdir}/libgtest.la
+%{_libdir}/libgtest.a
 /usr/share/aclocal/gtest.m4
 
 %changelog
